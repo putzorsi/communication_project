@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "bertopic-experiments"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.13"
+setuptools = "^75.1.0"
+huspacy = "^0.11.0"
+spacy = "3.7.0"
+numpy = "1.26.4"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

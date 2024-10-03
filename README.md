@@ -1,0 +1,13 @@
+- hozzunk létre egy "data" file-t
+- töltsük le a data mappába a "combined_transcripts_freeConv" mappát, amely a dialógusokat tartalmazza
+- töltsük le a Drive-ról a data mappába a stopwordlist.txt-t
+- töltsük le a Drive-ról a data mappába a colors.txt-t
+- ha az 1. notebook indításakor nem akar betölteni a huspacy és nem tudunk lemmatizálni, akkor töltsük fel a data mappába a lemmatized.pkl-t
+- a "data" mappáb belül hozzunk létre egy mappát a topic modelleknek "models" néven
+- a "data" mappán belül hozzunk létre egy mappát a topikoknak "topic_info" néven
+- a "data" mappáb belül hozzunk létre egy mappát a beszínezett diskurzusoknak "htmls" néven
+- tehát a data mappa az alábbi mappákat tartalmazza:
+  - combined_transcripts_freeConv
+  - models
+  - topic_info
+  - htmls
