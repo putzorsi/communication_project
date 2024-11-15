@@ -1,13 +1,16 @@
-- hozzunk létre egy "data" file-t
-- töltsük le a data mappába a "combined_transcripts_freeConv" mappát, amely a dialógusokat tartalmazza
-- töltsük le a Drive-ról a data mappába a stopwordlist.txt-t
-- töltsük le a Drive-ról a data mappába a colors.txt-t
-- ha az 1. notebook indításakor nem akar betölteni a huspacy és nem tudunk lemmatizálni, akkor töltsük fel a data mappába a lemmatized.pkl-t
-- a "data" mappáb belül hozzunk létre egy mappát a topic modelleknek "models" néven
-- a "data" mappán belül hozzunk létre egy mappát a topikoknak "topic_info" néven
-- a "data" mappáb belül hozzunk létre egy mappát a beszínezett diskurzusoknak "htmls" néven
-- tehát a data mappa az alábbi mappákat tartalmazza:
-  - combined_transcripts_freeConv
+- hozzunk létre a következő mappákat:
+  - data
+  - resources
   - models
-  - topic_info
-  - htmls
+  - results
+    - discourse_matrices
+  - vizs
+    - colored_text
+    - punchcard_per_discourse
+    - topic
+  
+  
+- töltsük le a data mappába a Drive-ról a "combined_transcripts_freeConv" mappát, amely a dialógusokat tartalmazza
+- töltsük le a resources mappába a Drive-ról az alábbi file-okat: stopwordlist.txt, colors.txt-t
+- ha az 1. notebook indításakor nem akar betölteni a huspacy és nem tudunk lemmatizálni vagy egyáltalán nem akarjuk futtatni az 1. notebookot, mert ezt a lépést ki akarjuk hagyni, akkor töltsük le a resources mappába a Drive-ról az alábbi file-okat: stopword_filtered.pkl, lemmatized.pkl, meta.pkl, docs.pkl
+- ha a modelt sem akarjuk megcsinálni, csak használni, azaz ki akarjuk hagyna a 2. notebookot, akkor töltsük le a models mappába a bert_probabilites_merged.pkl-t és a results mappába a prob_matrix.csv, bert_probabilities_merged_85_new_names.csv-t.
